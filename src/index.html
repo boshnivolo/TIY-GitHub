@@ -20,22 +20,22 @@
           <div class = "small-column">
             <img src = "https://avatars1.githubusercontent.com/u/583231?v=3&s=460" height="240" width="240"/>
             <br>
-            <span class = "full_name">The Octocat</span>
-            <p class = "username">octocat</p>
+            <span class = "full_name">{{name}}</span>
+            <p class = "username">{{login}}</p>
             <hr />
-            <span class="octicon octicon-organization"> GitHub</span>
-            <span class="octicon octicon-location"> San Francisco</span>
-            <span class="octicon octicon-mail"><a href="octocat@github.com"> octocat@github.com</a></span>
-            <span class="octicon octicon-link"><a href="http://www.github.com/blog"> http://www.github.com/blog</a></span>
-            <span class="octicon octicon-clock"> Joined on Jan 25, 2011</span>
+            <span class="octicon octicon-organization"> {{organizations_url}}</span>
+            <span class="octicon octicon-location"> {{location}}</span>
+            <span class="octicon octicon-mail"><a href="{{email}}"> {{email}}</a></span>
+            <span class="octicon octicon-link"><a href="{{blog}}"> {{blog}}</a></span>
+            <span class="octicon octicon-clock"> {{created_at}}</span>
             <hr />
             <table class="friends">
               <thead></thead>
               <tbody>
                 <tr>
-                  <th><a href="https://github.com/octocat/followers" class="pi_link" id="followers_link"> 1.1k </a></th>
-                  <th><a href="https://github.com/stars/octocat" class="pi_link" id="starred_link"> 2 </a></th>
-                  <th><a href="https://github.com/octocat/following" class="pi_link" id="following_link"> 6 </a></th>
+                  <th><a href="{{followers_url}}" class="pi_link" id="followers_link"> {{followers}} </a></th>
+                  <th><a href="{{starred_url}}" class="pi_link" id="starred"> {{starred_url}} </a></th>
+                  <th><a href="{{following_url}}" class="pi_link" id="following_link"> {{following}} </a></th>
                 <tr>
                   <td class="pi_grey" id="grey_followers">Followers</td>
                   <td class="pi_grey" id="grey_starred">Starred</td>

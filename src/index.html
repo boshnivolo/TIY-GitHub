@@ -16,47 +16,38 @@
         <link rel="stylesheet" href="octicons/octicons.css">
     </head>
     <body>
-      <div class ="container"> <!--This is the whole info-holding space. -->
+      <main class ="small_container"> <!--This is the whole info-holding space. -->
           <div class = "small-column">
-<<<<<<< HEAD
-=======
-            <img src = "https://avatars1.githubusercontent.com/u/583231?v=3&s=460" height="319" width="319"/>
+            <img src = "https://avatars1.githubusercontent.com/u/583231?v=3&s=460" height="240" width="240"/>
+            <br>
             <span class = "full_name">The Octocat</span>
-            <br>
-            <span class = "username">octocat</span>
-            <br>
+            <p class = "username">octocat</p>
             <hr />
             <span class="octicon octicon-organization"> GitHub</span>
-            <br>
             <span class="octicon octicon-location"> San Francisco</span>
-            <br>
             <span class="octicon octicon-mail"><a href="octocat@github.com"> octocat@github.com</a></span>
-            <br>
             <span class="octicon octicon-link"><a href="http://www.github.com/blog"> http://www.github.com/blog</a></span>
-            <br>
             <span class="octicon octicon-clock"> Joined on Jan 25, 2011</span>
-            </div>
             <hr />
-            <table>
-            <tr>
-              <td id="followers">
-              <a href="https://github.com/octocat/followers" class="pi_link" id="followers_link"> 1.1k </a>
+            <table class="friends">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <th><a href="https://github.com/octocat/followers" class="pi_link" id="followers_link"> 1.1k </a></th>
+                  <th><a href="https://github.com/stars/octocat" class="pi_link" id="starred_link"> 2 </a></th>
+                  <th><a href="https://github.com/octocat/following" class="pi_link" id="following_link"> 6 </a></th>
+                <tr>
+                  <td class="pi_grey" id="grey_followers">Followers</td>
+                  <td class="pi_grey" id="grey_starred">Starred</td>
+                  <td class="pi_grey" id="grey_following">Following</td>
+                </tbody>
+              </div>
 
-              <td id="starred">
-              <a href="https://github.com/stars/octocat" class="pi_link" id="starred_link"> 2 </a>
-
-              <td id="following">
-              <a href="https://github.com/octocat/following" class="pi_link" id="following_link"> 6 </a>
-
-            <tr>
-              <td class="pi_grey" id="grey_followers">Followers</span>
-              <td class="pi_grey" id="grey_starred">Starred</span>
-              <td class="pi_grey" id="grey_following">Following</span>
->>>>>>> feature--profile-details
-          </div>
+          </main>
+          <main class="big_container">
           <div class = "big-column">
           </div>
-        </div>
+        </main>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

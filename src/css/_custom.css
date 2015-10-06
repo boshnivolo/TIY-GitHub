@@ -54,6 +54,11 @@ a {
   color: #4D4D4D;
 }
 
+.panels {
+  font-size: 15pt;
+  font-weight: bold;
+}
+
 .tabs {
   width: 100%;
   display: inline-block;
@@ -69,6 +74,8 @@ a {
   margin: 0px 5px;
   float: left;
   list-style: none;
+  border: 1px solid black;
+  border-bottom-color: white;
 }
 
   .tab-links a {

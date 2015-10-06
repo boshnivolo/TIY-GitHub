@@ -37,7 +37,7 @@
         <br>
         <span class = "full_name"> {{name}}</span>
 
-        <p class = "username"> {{login}}</p>
+        <span class = "username"> {{login}}</span>
           <hr />
         <span class="octicon octicon-organization"> {{organizations_url}}</span>
         <br>
@@ -76,19 +76,24 @@
               <p>Stuff you did...good for you</p>
             </div>
 
-            <div id="tab2" class="tab active">
-              <a href="https://github.com/octocat/Spoon-Knife" class="panels"><h3>Spoon-Knife</h3></a>
+          <div id="tab2" class="tab active">
+            <form class="repo_search" action="/search" method="get" role="search">
+              <input type="text" class="search" placeholder="Find a repository...">
+              <input type="submit" value="Search" class="btn">
+            </form>
+            <hr />
+              <a href="https://github.com/octocat/Spoon-Knife" class="panels">Spoon-Knife</a>
               <p>This repo is for demonstration purposes only.</p>
               <p>Updated 6 hours ago</p>
               <hr />
-              <a href="https://github.com/octocat/Hello-World" class="panels"><h3>Hello-World</h3></a>
+              <a href="https://github.com/octocat/Hello-World" class="panels">Hello-World</a>
               <p>This your first repo!</p>
               <p>Updated 4 days ago</p>
               <hr />
-              <a href="https://github.com/octocat.github.io" class="panels"><h3>octocat.github.io</h3></a>
+              <a href="https://github.com/octocat.github.io" class="panels">octocat.github.io</a>
               <p>Updated 4 days ago</p>
               <hr />
-            </div>
+          </div>
 
             <div id="tab3" class="tab">
               <p>Everybody can see this.</p>

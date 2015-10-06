@@ -9,60 +9,12 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/_custom.css"/>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/main.js"></script>
         <link rel="stylesheet" href="octicons/octicons.css">
-    </head>
-    <body>
-      <div class ="container"> <!--This is the whole info-holding space. -->
-          <div class = "small-column">
-<<<<<<< HEAD
-=======
-            <img src = "https://avatars1.githubusercontent.com/u/583231?v=3&s=460" height="319" width="319"/>
-            <span class = "full_name">The Octocat</span>
-            <br>
-            <span class = "username">octocat</span>
-            <br>
-            <hr />
-            <span class="octicon octicon-organization"> GitHub</span>
-            <br>
-            <span class="octicon octicon-location"> San Francisco</span>
-            <br>
-            <span class="octicon octicon-mail"><a href="octocat@github.com"> octocat@github.com</a></span>
-            <br>
-            <span class="octicon octicon-link"><a href="http://www.github.com/blog"> http://www.github.com/blog</a></span>
-            <br>
-            <span class="octicon octicon-clock"> Joined on Jan 25, 2011</span>
-            </div>
-            <hr />
-            <table>
-            <tr>
-              <td id="followers">
-              <a href="https://github.com/octocat/followers" class="pi_link" id="followers_link"> 1.1k </a>
-
-              <td id="starred">
-              <a href="https://github.com/stars/octocat" class="pi_link" id="starred_link"> 2 </a>
-
-              <td id="following">
-              <a href="https://github.com/octocat/following" class="pi_link" id="following_link"> 6 </a>
-
-            <tr>
-              <td class="pi_grey" id="grey_followers">Followers</span>
-              <td class="pi_grey" id="grey_starred">Starred</span>
-              <td class="pi_grey" id="grey_following">Following</span>
->>>>>>> feature--profile-details
-          </div>
-          <div class = "big-column">
-          </div>
-        </div>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -77,5 +29,88 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+    </head>
+    <body>
+      <section class = "small-column">
+        <img src = "https://avatars1.githubusercontent.com/u/583231?v=3&s=460" height="240" width="240"/>
+        <br>
+        <span class = "full_name"> {{name}}</span>
+
+        <span class = "username"> {{login}}</span>
+          <hr />
+        <span class="octicon octicon-organization"> {{organizations_url}}</span>
+        <br>
+        <span class="octicon octicon-location"> {{location}}</span>
+        <br>
+        <span class="octicon octicon-mail"> {{email}}</span>
+        <br>
+        <span class="octicon octicon-link"> {{blog}}</span>
+        <br>
+        <span class="octicon octicon-clock"> {{created_at}}</span>
+        <hr />
+        <div class = "pi">
+          <a href="{{followers_url}}" class="pi_link" id="followers_link"> {{followers}} </a>
+          <p class="pi_grey" id="grey_followers">Followers</td>
+        </div>
+        <div class = "pi"><a href="{{starred_url}}" class="pi_link" id="starred"> {{starred}} </a>
+          <p class="pi_grey" id="grey_starred">Starred</td>
+        </div>
+        <div class = "pi"><a href="{{following_url}}" class="pi_link" id="following_link"> {{following}} </a>
+          <p class="pi_grey" id="grey_following">Following</td>
+        </div>
+
+
+        </section>
+
+        <section class = "big-column">
+          <div class = "tabs">
+          <nav class= "contributions">
+            <button><a href="#tab1"><span class="octicon octicon-diff-added"> Contributions</span></a></button>
+            <button class="active"><a href="#tab2"><span class="octicon octicon-repo"> Repositories</span></a></button>
+            <button><a href="#tab3"><span class="octicon octicon-rss">Public Activity</span></a></button>
+
+
+          <div class ="tab-content">
+            <div id="tab1" class="tab">
+              <p>Stuff you did...good for you</p>
+            </div>
+
+          <div id="tab2" class="tab active">
+            <form class="repo_search" action="/search" method="get" role="search">
+              <input type="text" class="search" placeholder="Find a repository...">
+              <input type="submit" value="Search" class="btn">
+            </form>
+            <hr />
+              <a href="https://github.com/octocat/Spoon-Knife" class="panels">Spoon-Knife</a>
+              <p>This repo is for demonstration purposes only.</p>
+              <p>Updated 6 hours ago</p>
+              <hr />
+              <a href="https://github.com/octocat/Hello-World" class="panels">Hello-World</a>
+              <p>This your first repo!</p>
+              <p>Updated 4 days ago</p>
+              <hr />
+              <a href="https://github.com/octocat.github.io" class="panels">octocat.github.io</a>
+              <p>Updated 4 days ago</p>
+              <hr />
+          </div>
+
+            <div id="tab3" class="tab">
+              <p>Everybody can see this.</p>
+              <p>What have you done</p>
+            </div>
+          </div>
+        </div>
+          </nav>
+        </section>
+
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
     </body>
 </html>

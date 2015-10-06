@@ -107,23 +107,27 @@ p {
 
 
 =======
+  main {
+    background-color: lightskyblue;
+  }
    .small-column {
-     width: 25%;
+     width: 21%;
      height: 600px;
      background-color: lightskyblue;
      display: inline-block;
-     margin-left: 20px;
+     margin-left: 10px;
      margin-right: 5px;
-     margin-top: -10px;
+     margin-top: 10px;
 
    }
 
    .big-column {
-     width: 70%;
+     width: 65%;
      height: 700px;
      background-color: lightskyblue;
      display: inline-block;
-     margin-left: 5px;
+     margin-left: 10px;
+     margin-right: 5px;
      margin-top: 10px;
 
    }
@@ -131,12 +135,20 @@ p {
    img {
      float: left;
      border-radius: 10px;
-     margin-top: -100px;
+     margin-top: 10px;
+     margin-left: 10px;
    }
 
+   hr {
+     width: 100%;
+  }
+
    .full_name {
-     font-size: 25pt;
+     font-size: 22pt;
      font-weight: bold;
+     float: left;
+     margin-left: 10px;
+     margin-right: 10px;
    }
 
    .username {
@@ -144,19 +156,33 @@ p {
      font-weight: lighter;
      color: #4D4D4D;
      letter-spacing: .7px;
+     float: left;
+     margin-top: -5px;
+     margin-left: 10px;
+     margin-bottom: 5px;
+     margin-right: 10px;
    }
 
    a {
      text-decoration: none;
    }
 
-   td {
+   .pi_top {
+     float: left;
+     width: 7%;
+     text-align: center;
+     margin-left: 5px;
+   }
+
+   div {
      align-items: center;
    }
 
    .pi_link {
      font-size: 28pt;
      font-weight: bold;
+     width: 7%;
+     margin-left: 5px;
    }
 
    .pi_grey {

@@ -1,14 +1,14 @@
 .small-column {
   width: 25%;
   float: left;
-  background-color: lightskyblue;
+  background-color: white;
 }
 
 .big-column {
   width: 70%;
   height: 700px;
   float: left;
-  background-color: lightskyblue;
+  background-color: white;
 }
 
 img {

@@ -4,16 +4,16 @@
 //
 // For now make the tab 'repo' always active.
 
-$(document).ready(function(){
-  $('.tabs .tab-links a').on('click', function(e){
-    var currentAttrValue = $(this).attr('href');
+$(' a[href="#tab1"]').on('click', function (){
+  console.log('tracer 1');
+  $(' section#tab1').toggleClass('active').siblings().removeClass('active');
+});
 
-    // Show/Hide tabs
-    $('.tabs ' + currentAttrValue).show().siblings().hide();
+$(' a[href="#tab2"]').on('click', function (){
+  console.log('tracer 2');
+  $(' section#tab2').toggleClass('active').siblings().removeClass('active');
+});
 
-    // Change/remove current tab to active
-    $(this).parent('button').addClass('active').siblings().removeClass('active');
-
-    e.preventDefault();
-  });
+$(' a[href="#tab3"]').on('click', function (){
+  $(' section#tab3').toggleClass('active').siblings().removeClass('active');
 });

@@ -58,3 +58,17 @@ td {
   color: #4D4D4D;
   text-align: center;
 }
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: inherit;
+}
+
+@media only screen and (max-width: 360px){
+a {
+  width: 100%;
+  }
+}

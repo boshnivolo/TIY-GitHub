@@ -15,6 +15,7 @@ img {
   padding-left: 1vw;
   border-radius: 10px;
   margin-top: 10px;
+  padding-right: 1vw;
 }
 
 span {
@@ -57,45 +58,29 @@ a {
 .panels {
   font-size: 15pt;
   font-weight: bold;
+  display: none;
 }
 
 .active {
   display: inherit;
 }
 
-.tab-links:after {
-  display: block;
-  clear: both;
-  content:'';
+.tabs {
+    float: left;
+    padding: 5px;
+    clear: both;
+    content: ' ';
 }
 
-.tab-links button {
-  margin: 0px 5px;
-  float: left;
-  list-style: none;
-  border: 1px solid black;
-  border-bottom-color: white;
-}
-
-  .tab-links a {
-    padding: 9px 15px;
-    display: inline-block;
-  }
-
-  .tab-content {
-    padding: 15px;
-  }
-
-  .tab {
-    display: none;
-  }
-
-  .tab.active {
+  .active {
     display: inherit;
   }
 
 @media only screen and (max-width: 360px){
   a {
+    width: 100%;
+  }
+  .small-column {
     width: 100%;
   }
 }

@@ -4,7 +4,9 @@
   "description": "",
   "main": "package.json",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "sass": "node-sass src/scss/main.scss src/css/main.css",
+    "install:bower": "bower install --save",
   },
   "repository": {
     "type": "git",
